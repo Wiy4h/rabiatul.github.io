@@ -1,0 +1,198 @@
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="mystyle.css"> <!--FILE CSS-->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap" rel="stylesheet"> <!--Jenis Font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Icon-->
+</head>
+
+  <body>
+    <section class="navbar-header">
+      <div class="navbar">
+        <div class="fpage">
+          <div class="header">
+            <img src="gambar/logo.png">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="MyPortfolio.html">Portfolio</a></li>
+              <li><a href="Resume.html">Resume</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill">
+        <h1>Skills</h1>
+      <div class="skills-area">
+        <div class="skill">
+          <div class="skill-title">HTML</div>
+          <div class="skill-bar"></div>
+          <div class="html skill-fill">
+            <span class="skill-percent">60%</span>
+          </div>
+      </div>
+
+        <div class="skill">
+          <div class="skill-title">Canva</div>
+          <div class="skill-bar"></div>
+          <div class="canva skill-fill">
+            <span class="skill-percent">90%</span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-title">Photoshop</div>
+          <div class="skill-bar"></div>
+          <div class="photoshop skill-fill">
+            <span class="skill-percent">80%</span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-title">Program Leader</div>
+          <div class="skill-bar"></div>
+          <div class="program-leader skill-fill">
+            <span class="skill-percent">90%</span>
+          </div>
+        </div>
+    </section>
+
+    <section class="banner2">
+      <div class=prtf1>
+        <div class="left-column">
+          <img src="gambar/ppd.png">
+        </div>
+      <div class="right-column">
+        <h1>Majlis Kenaikan Pangkat Pegawai PPD Kulai<br></h1>
+          <h2>This program is an appreciation program for teachers who have successfully promoted. This program is divided into 3 sessions covering around 135 invitees. During the program, I was assigned as a Cameraman and also a member of the technical committee.<br></h2>
+          <h3>Venue : Dewan Seminar, Pejabat Pendidikan Daerah (PPD) Kulai<br>Date : 28 August 2024</h3> 
+          <h3>Skills : Cameraman<br>★★★★☆<br><br></h3>
+          <button class="see-more-btn" onclick="openPopup('popup1')">See More</button>
+        </div>
+     </div>
+
+      <!-- Pop-Up Gambar -->
+      <div id="popup1" class="popup hidden">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+          <div class="popup-gallery">
+            <img src="gambar/ppd1.jpg">
+            <img src="gambar/ppd2.jpg">
+            <img src="gambar/ppd3.jpg">
+            <img src="gambar/ppd4.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner2">
+      <div class=prtf3>
+        <div class="left-column">
+          <img src="gambar/mrdk.png">
+        </div>
+      <div class="right-column">
+        <h1>Hari Kemerdekaan Ke-67, PPD Kulai<br></h1>
+          <h2>During my internship, PPD Kulai gave interns the opportunity to participate in Hari Kemerdekaan. I volunteered to design jersey and make improvements to the KRSK club logo that was available at PPD Kulai for that day.</h2>
+          <h3>Venue : Pejabat Tanah Daerah Kulai<br>Date : 31 August 2024</h3> 
+          <h3>Skills : Designer<br>★★★★☆<br><br></h3>
+          <button class="see-more-btn" onclick="openPopup('popup2')">See More</button>
+        </div>
+     </div>
+
+      <!-- Pop-Up Gambar -->
+      <div id="popup2" class="popup hidden">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+          <div class="popup-gallery">
+            <img src="gambar/Perbarisan.jpg">
+            <img src="gambar/mrdk4.png">
+            <img src="gambar/mrdk5.png">
+            <img src="gambar/mrdk6.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Fungsi untuk membuka pop-up
+        function openPopup(popupId) {
+          document.getElementById(popupId).classList.remove("hidden");
+        }
+
+        // Fungsi untuk menutup pop-up
+        function closePopup(popupId) {
+          document.getElementById(popupId).classList.add("hidden");
+        }
+    </script>
+
+
+
+    <section class="prft5">
+      <div class="marquee">
+        <h1> MAJLIS PERWAKILAN KOMANDER KESATRIA (MPKK) BATALION VI</h1>
+      </div>
+    </section>
+
+    <section class="MPKK">
+      <img src="gambar/MPKK.png">
+      <button class="video-btn" onclick="window.location.href='video.html'">View More
+      </button>
+    </section>
+
+
+     <section class="banner5">
+      <div class=prtf6>
+        <div class="left-column">
+          <h1>KOMPENI SISWA BOMBA BANTUAN LOGO</h1>
+          <h2>I volunteered to design a new logo for Kompeni SISBOM by using Photoshop and canva. I have taking on the responsibility to create a fresh and impactful visual identity that would represent the company's values and mission effectively.<br></h2>
+          <h3>Date : 18 October 2024</h3> 
+          <h3>Skills : Graphic Design</h3>
+          <h2>★★★★☆<br><br></h2>
+        </div>
+
+      <div class="right-column">
+        <img src="gambar/logo2.png">
+      </div>
+     </div>
+    </section>
+
+     <section class="banner6">
+      <div class=prtf7>
+        <div class="left-column">
+          <h1>Eksplorasi Balai Bomba</h1>
+          <h2>For this program it was an educational field trip designed to provide members of the Kelab Kompeni SISBOM with insights into firefighting knowledge, such as exposure to equipment, machinery, and mission handling techniques. For this program I played role as the Project Leader.<br></h2>
+          <h3>Venue : Balai Bomba dan Penyelamat Segamat<br>Date : 22 June 2024</h3> 
+          <h3>Skills : Event Planning</h3>
+          <h2>★★★★☆<br><br></h2>
+        </div>
+
+      <div class="right-column">
+        <img src="gambar/eksplorasi.png">
+      </div>
+     </div>
+    </section>
+
+
+    <section class="banner7">
+      <div class=prtf8>
+        <div class="left-column">
+          <img src="gambar/dinner.png">
+        </div>
+      <div class="right-column">
+        <h1>SISBOM Classic Night<br></h1>
+          <h2>This event was a dinner program for the students of the Kelab Kompeni SISBOM. This event was an appreciation event for the 3rd semester students of the Kelab Kompeni SISBOM. I played the role of Project Leader and multimedia committee for this event.<br></h2>
+          <h3>Venue : Bilik Kuliah Sri Pengaga<br>Date : 13 January 2024</h3> 
+          <h3>Skills : Cameraman</h3>
+          <h2>★★★★☆<br></h2>
+     </div>
+    </section>
+     
+
+    <div class="footer">
+    <p>Rabiatul Adawiyah. All Right Reserved.<sup>&copy; 2024</sup></p>
+  </div>
+
+  </body>
+</html>

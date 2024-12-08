@@ -1,0 +1,217 @@
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="mystyle.css"> <!--FILE CSS-->
+  <!--2 Jenis Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!--Icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+      
+    </section>
+     <section class="prft4">
+      <div class="marquee">
+        <h1> MAJLIS PERWAKILAN KOMANDER KESATRIA (MPKK) BATALION VI</h1>
+      </div>
+    </section>
+
+
+    <section class="bckg1">
+      <div class="audio">
+        <audio id="myAudio" controls autoplays src="mpkk.mp3">
+      </audio>
+      </div>
+    </section>
+
+
+    <section class="bckg2">
+      <div class="logo">
+          <img src="gambar/KESAT.png">
+          <img src="gambar/JENGKING.png">
+          <h3>"Once Komander, Always Komander"</h3>
+      </div>
+    </section>
+
+
+    <section class="bckg3">
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="gambar/CO.png">
+          <img src="gambar/mpkk1.jpg">
+          <img src="gambar/mpkk3.jpg">
+          <img src="gambar/mpkk4.jpg">
+          <img src="gambar/mpkk5.jpg">
+          <img src="gambar/mpkk6.jpg">
+          <img src="gambar/mpkk7.jpg">
+          <img src="gambar/mpkk8.jpg">
+          <img src="gambar/mpkk9.jpg">
+          <img src="gambar/mpkk10.jpg">
+          <img src="gambar/mpkk11.jpg">
+          <img src="gambar/mpkk12.jpg">
+          <img src="gambar/mpkk13.jpg">
+          <img src="gambar/mpkk14.jpg">
+          <img src="gambar/mpkk15.jpg">
+          <img src="gambar/mpkk16.jpg">
+          <img src="gambar/mpkk17.jpg">
+          <img src="gambar/mpkk18.jpg">
+        </div>
+        <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+<!-- Tambah titik ikut bilangan gambar -->
+      <div class="carousel-indicators">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        <span class="dot" data-slide="4"></span>
+        <span class="dot" data-slide="5"></span>
+        <span class="dot" data-slide="6"></span>
+        <span class="dot" data-slide="7"></span>
+        <span class="dot" data-slide="8"></span>
+        <span class="dot" data-slide="9"></span>
+        <span class="dot" data-slide="10"></span>
+        <span class="dot" data-slide="11"></span>
+        <span class="dot" data-slide="12"></span>
+        <span class="dot" data-slide="13"></span>
+        <span class="dot" data-slide="14"></span>
+        <span class="dot" data-slide="15"></span>
+        <span class="dot" data-slide="16"></span>
+        <span class="dot" data-slide="17"></span>
+      </div>
+    </section>
+
+
+    <script>
+
+// CAROUSEL
+      const track = document.querySelector('.carousel-track');
+      const images = document.querySelectorAll('.carousel-track img');
+      const prevButton = document.querySelector('.prev');
+      const nextButton = document.querySelector('.next');
+      let currentIndex = 0;
+      const totalImages = images.length;
+
+// Carousel
+      function updateCarousel() {
+        const slideWidth = images[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+// Dot
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex].classList.add('active');
+      }
+
+// Untuk bergerak ke gambar seterusnya
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalImages; // Pergi slide seterusnya
+        updateCarousel();
+      }
+
+// Untuk bergerak ke gambar sebelum
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Pergi slide sebelumnya
+        updateCarousel();
+      }
+
+// Autoplay setiap 3 saat
+      setInterval(nextSlide, 3000); // Tukar 3000 untuk masa autoplay (dalam milisaat)
+
+// Untuk butang prev dan next
+      nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalImages; // Pergi slide seterusnya
+        updateCarousel();
+      });
+
+      prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Pusing ke slide sebelumnya
+        updateCarousel();
+      });
+
+
+// Tambah titik ikut bilangan gambar 
+      const dots = document.querySelectorAll('.dot');
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentIndex = index;
+          updateCarousel();
+
+          dots.forEach(d => d.classList.remove('active'));
+          dot.classList.add('active');
+        });
+      });
+
+// Carousel automatik
+      window.addEventListener('load', updateCarousel);
+    </script>
+
+    <section class="teks1">
+      <div class="teks">
+        <h2><b>I have actively participated in MPKK by being involved in:</b></h2>
+        <ul class="check-list">
+          <li>Volunteer Activities</li>
+          <li>Assistang Event for Perkom Ko</li>
+          <li>Hakka Performance for the Penutup Mini Perkom Ko</li>
+          <li>Assistant Event Leader for the Simulasi Bencana Perkom Ko</li>
+          <li>Winning 2nd place in the Ekspo Kelab dan Persatuan 2.0 (ESKEP)</li>
+        </ul>
+      </div>
+    </section>
+
+        <div class="video1">
+         <h1>VIDEO</h1>
+        </div>
+
+      <section class="video2">
+        <video id="myVideo1" width="30%" controls>
+          <source src="VIDEO KOMPENI FULL.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+<!--Mula Video dari 2:56 -->
+        <script>
+          window.onload = function() {
+            var video = document.getElementById('myVideo1');
+            
+            var startTime = 177;
+
+            video.currentTime = startTime;
+          };
+        </script>
+
+        <video id="myVideo2" width="30%" controls>
+          <source src="VIDEO AKTIVITI.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+
+        <video id="myVideo2" width="30%" controls>
+          <source src="hakka.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+    </section>
+
+    <section class="back"></section>
+      <div class="back-btn2">
+            <ul>
+              <li><a href="index.html">Back</a></li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <div class="footer">
+      <p>Rabiatul Adawiyah. All Right Reserved.<sup>&copy; 2024</sup></p>
+    </div>
+  </body>
+</html>
+
